@@ -255,10 +255,10 @@ function M.setup(user_config)
 	})
 
 	vim.cmd([[
-    function! vyGoToBuf(bufnr,b,c,d)
+    function! VyGoToBuf(bufnr,b,c,d)
       call luaeval('require("vyBufline").focus_buf(_A)', a:bufnr)
     endfunction
-    function! vyGotoTab(tabnr,b,c,d)
+    function! VyGotoTab(tabnr,b,c,d)
       execute a:tabnr .. 'tabnext'
     endfunction
   ]])

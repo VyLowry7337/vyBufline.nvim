@@ -2,13 +2,13 @@ local segments = require("vyBufline.segments")
 
 local function test_hl()
 	local result = segments.hl("BufOn")
-	assert(result == "%#vyBufOn#", "should return highlight ref")
+	assert(result == "%#VyBufOn#", "should return highlight ref")
 	print("PASS: hl")
 end
 
 local function test_clickable()
 	local result = segments.clickable("test", "GoToBuf", 42)
-	assert(result == "%42@vyGoToBuf@test%X", "should wrap in click handler")
+	assert(result == "%42@VyGoToBuf@test%X", "should wrap in click handler")
 	print("PASS: clickable")
 end
 
